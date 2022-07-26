@@ -1,10 +1,10 @@
 body{
-  	background-image: url('images/pattern-background-desktop.svg');
-  	background-color: white;
   	display: grid;
   	min-height: 100vh;
+  	background-repeat: no-repeat;
+  	background-size: 100%;
+  	background-color: hsl(225, 100%, 98%);
 }	
-
 .card {
 	vertical-align: middle;
 	background-color: white;
@@ -59,6 +59,7 @@ body{
 .div2 {
 	align-self: center;
 	justify-content: flex-start;
+	margin-left: -70px;
 }
 		.plan{
 			font-family: 'Red Hat Display', sans-serif;
@@ -84,6 +85,7 @@ body{
 }
 .change:hover {
 	color:  hsl(224, 23%, 55%);
+	cursor: pointer;
 }
 
 .button {
@@ -101,6 +103,7 @@ body{
 }
 .button:hover {
 	background-color:  hsl(224, 23%, 55%);
+	cursor: pointer;
 }
 
 .order {
@@ -116,4 +119,5 @@ body{
 
 .order:hover{
 	color: hsl(223, 47%, 23%);
+	cursor: pointer;
 }
