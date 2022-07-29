@@ -1,94 +1,127 @@
+@media screen and (min-width:  375px){
 body{
-  	display: grid;
-  	min-height: 100vh;
-  	background-repeat: no-repeat;
-  	background-size: 100%;
-  	background-color: hsl(225, 100%, 98%);
-}	
-.card {
-	vertical-align: middle;
-	background-color: white;
-	width: 450px;	
-	border-radius: 20px;
-	margin: auto;	
-	padding: 0px 48px;
-	box-shadow: 5px 10px 35px  rgba(0, 0, 0, 0.08);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		background-image: url("../images/pattern-background-desktop.svg");
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-color: hsl(225, 100%, 98%);
+	}	
 }
 
-.illustration {
-	margin-left: -48px;
+@media screen and (max-width: 375px){
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		background-image: url("../images/pattern-background-mobile.svg");
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-color: hsl(225, 100%, 98%);
+	}	
+}
+
+.card{
+	margin: auto;
+	width: 60%;
+	background-color: white;
+	border-radius: 20px;
+	padding:  48px;
+	box-shadow: 5px 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.illustration{
+	margin: -48px;
+	margin-bottom: 36px;
+
+}
+
+.image{	
+	width: 100%;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
-	margin-bottom: 48px;
 }
 
-.h1 {
+.title{
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 28px;
 	text-align: center;
 	font-weight: 900;
 	color: hsl(223, 47%, 23%);
+	text-transform: capitalize;
 	margin-bottom: 24px;
 }
 
-.h2 {
-	width: 300px;
+.paragraph{
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 16px;
 	text-align: center;
 	font-weight: 500;
 	margin: auto;
 	color: hsl(224, 23%, 55%);
-	margin-bottom: 24px	;
+	margin-bottom: 24px;
 }
 
-.div1 {
-	background-color: hsl(225, 100%, 98%);
-	border-radius: 10px;
-	padding: 24px;
-	margin-bottom: 32px;
-	width: 100%;
-	display: inline-flex;
+.plan-conteiner{
+	display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-content: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    align-items: center;
+    margin-bottom: 7%;
+    padding: 5%;
+}
+.payment-part-container{
+	width: 50%;
+}
+.music-and-text-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
 	justify-content: space-between;
+	align-items: center;
 }
 
-.music-icon {
-	justify-content: flex-start;
+.plan{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 16px;
+	color: hsl(223, 47%, 23%);
+	font-weight: 700;
+	margin-bottom: 10px;
 }
 
-.div2 {
-	align-self: center;
-	justify-content: flex-start;
-	margin-left: -70px;
+.price{
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 16px;
+	color: hsl(224, 23%, 55%);
+	font-weight: 500;
 }
-		.plan{
-			font-family: 'Red Hat Display', sans-serif;
-			font-size: 16px;
-			color: hsl(223, 47%, 23%);
-			font-weight: 700;
-		}
 
-		.price{
-			font-family: 'Red Hat Display', sans-serif;
-			font-size: 16px;
-			color: hsl(224, 23%, 55%);
-			font-weight: 500;
-		}
-.change {
+.change{
 	align-self: center;
 	font-family: 'Red Hat Display', sans-serif;
 	text-decoration: underline;
 	font-weight: 700;
 	color: hsl(245, 75%, 52%);
 	height: fit-content;
-	
 }
 .change:hover {
-	color:  hsl(224, 23%, 55%);
+	color:  hsl(245, 75%, 65%);
 	cursor: pointer;
 }
 
-.button {
+.button-container{
+
+}
+.payment-button {
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
@@ -99,25 +132,25 @@ body{
 	background-color:  hsl(245, 75%, 52%);
 	color: white;
 	margin-bottom: 32px;
-	box-shadow: 0px 8px 15px hsl(224, 23%, 55%);
+	box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.45);
 }
-.button:hover {
-	background-color:  hsl(224, 23%, 55%);
+.payment-button:hover {
+	background-color:  hsl(245, 75%, 65%);
 	cursor: pointer;
 }
 
-.order {
+.cancel-button {
 	font-family: 'Red Hat Display', sans-serif;
 	font-weight: 700;
 	font-size: 16px;
 	color: hsl(224, 23%, 55%);
 	margin: auto;
 	text-align: center;
-	margin-bottom: 48px;
 	width: fit-content;
+	text-transform: capitalize;
 }
 
-.order:hover{
+.cancel-button:hover{
 	color: hsl(223, 47%, 23%);
 	cursor: pointer;
 }
