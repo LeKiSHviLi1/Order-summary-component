@@ -29,25 +29,29 @@ body{
 	width: 60%;
 	background-color: white;
 	border-radius: 20px;
-	padding:  48px;
+	padding:  6.7%;
 	box-shadow: 5px 10px 35px rgba(0, 0, 0, 0.08);
+	
 }
 
 .illustration{
-	margin: -48px;
+	margin: -14.5%;
 	margin-bottom: 40px;
-
 }
 
 .image{	
 	width: 100%;
+	height: auto;
+	resize: both;
+	object-fit: contain;
+	max-width: 450px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
 
 .title{
 	font-family: 'Red Hat Display', sans-serif;
-	font-size: 28px;
+	font-size: 175%;
 	text-align: center;
 	font-weight: 900;
 	color: hsl(223, 47%, 23%);
@@ -57,7 +61,7 @@ body{
 
 .paragraph{
 	font-family: 'Red Hat Display', sans-serif;
-	font-size: 16px;
+	font-size: 100%;
 	width: 80%;
 	line-height: 1.4;
 	text-align: center;
@@ -81,7 +85,7 @@ body{
     padding: 5%;
 }
 .payment-part-container{
-	width: 50%;
+	width: 70%;
 }
 .music-and-text-container{
 	display: flex;
@@ -92,11 +96,11 @@ body{
 	align-items: center;
 }
 .payment-text-container{
-	margin-right: 10%;
+	
 }
 .plan{
 	font-family: 'Red Hat Display', sans-serif;
-	font-size: 16px;
+	font-size: 100%;
 	color: hsl(223, 47%, 23%);
 	font-weight: 900;
 	margin-bottom: 10px;
@@ -104,9 +108,10 @@ body{
 
 .price{
 	font-family: 'Red Hat Display', sans-serif;
-	font-size: 16px;
+	font-size: 100%;
 	color: hsl(224, 23%, 55%);
 	font-weight: 500;
+	margin-right: 50px;
 }
 
 .change{
@@ -116,6 +121,7 @@ body{
 	font-weight: 700;
 	color: hsl(245, 75%, 52%);
 	height: fit-content;
+	font-size: 100%;
 }
 .change:hover {
 	color:  hsl(245, 75%, 65%);
@@ -127,7 +133,7 @@ body{
 }
 .payment-button {
 	font-family: 'Red Hat Display', sans-serif;
-	font-size: 16px;
+	font-size: 100%;
 	font-weight: 700;
 	height: 48px;
 	width: 100%;
@@ -146,7 +152,7 @@ body{
 .cancel-button {
 	font-family: 'Red Hat Display', sans-serif;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 100%;
 	color: hsl(224, 23%, 55%);
 	margin: auto;
 	text-align: center;
